@@ -74,15 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups. My support chat - → @MrPepe_Support
+I am the servant, you are the master.
+Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a loser For Fun and help admins manage their groups with laughs 😂! Have a look at the following for an idea of some of \
-the things I can help you with.
+Daisuki desu! It's a good day to be alive! Find out what I can do with '/' 
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -100,7 +99,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/3fb433d4a0c707ef01f56.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/637f6e066d0813841bf5e.jpg"
 
 DONATE_STRING = """NO DON'T!!"""
 
@@ -219,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Pepe to your group",
+                                text="☑️ Add Tomoe-chi to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -227,24 +226,24 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/{SUPPORT_CHAT}",
+                                text="Excalibur Group Chat",
+                                url=f"https://t.me/joinchat/UFNEz_NhH5FRwKxd",
                             ),
                             InlineKeyboardButton(
-                                text="Watch Anime!",
-                                url="https://t.me/Anime_Wars",
+                                text="Pokemon Episodes",
+                                url="https://t.me/PokemonCenter",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
-                                text="Anime Chat",
-                                url="https://t.me/Anime_Chat_English",
+                                text="Lyfe's Vault",
+                                url="https://t.me/joinchat/T7y_U1qyIHjhFwE1",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Source code",
-                                url="https://github.com/ImmaGoku/SaitamaRobot",  # Like this you can modify bot with your favorite sentences and if you are developer then codes!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                text="Hope you enjoy me, onii chan",
+                                url="",  # Like this you can modify bot with your favorite sentences and if you are developer then codes!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                             )
                         ],
                     ]
